@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="gold">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advocate Subhadra Gupta – Civil Law | Kota, Rajasthan</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ════════════════════════════════════════
+       THEME TOKENS
+    ════════════════════════════════════════ */
+    :root,
+    [data-theme="gold"] {
+      --ink:        #0e0e0e;
+      --nav-bg:     rgba(13,27,42,.96);
+      --nav-border: rgba(201,168,76,.25);
+      --navy:       #0d1b2a;
+      --navy2:      #112240;
+      --accent:     #c9a84c;
+      --accent-lt:  #e2c27d;
+      --accent-dim: rgba(201,168,76,.18);
+      --hero-bg:    #0d1b2a;
+      --hero-grad:  linear-gradient(to right, transparent 60%, #0d1b2a 100%),
+                    linear-gradient(to top, rgba(13,27,42,.55) 0%, transparent 40%);
+      --stamp-bg:   rgba(13,27,42,.82);
+      --stamp-bdr:  rgba(201,168,76,.45);
+      --stamp-col:  #e2c27d;
+      --eyebrow:    #c9a84c;
+      --name-col:   #ffffff;
+      --name-em:    #e2c27d;
+      --tag-col:    rgba(255,255,255,.55);
+      --stat-bg:    rgba(255,255,255,.06);
+      --stat-bdr:   rgba(255,255,255,.08);
+      --stat-ic:    #c9a84c;
+      --stat-lbl:   rgba(255,255,255,.4);
+      --stat-val:   rgba(255,255,255,.9);
+      --stat-hov:   rgba(201,168,76,.07);
+      --btn1-bg:    #c9a84c;
+      --btn1-col:   #0d1b2a;
+      --btn1-hov:   #e2c27d;
+      --btn1-shd:   rgba(201,168,76,.35);
+      --btn2-bdr:   rgba(201,168,76,.5);
+      --btn2-col:   #e2c27d;
+      --btn2-hov:   rgba(201,168,76,.18);
+      --bg:         #fdfcf9;
+      --cream:      #f7f4ee;
+      --muted:      #6b7280;
+      --border:     #e4ddd0;
+      --card:       #ffffff;
+      --r:          10px;
+      --ic-bg:      #0d1b2a;
+      --ic-col:     #c9a84c;
+      --sec-h2:     #0d1b2a;
+      --rule-bg:    linear-gradient(90deg, #c9a84c, #e2c27d);
+      --icard-bdr:  #e4ddd0;
+      --icard-hov:  #c9a84c;
+      --icard-shd:  rgba(201,168,76,.12);
+      --icard-val:  #0d1b2a;
+      --crt-bg:     #0d1b2a;
+      --crt-bdr:    rgba(201,168,76,.2);
+      --crt-ic-bg:  rgba(201,168,76,.12);
+      --crt-ic-col: #e2c27d;
+      --crt-h3:     #f0e8d8;
+      --crt-p:      rgba(255,255,255,.38);
+      --cert-bg:    #0d1b2a;
+      --cert-bdr:   rgba(201,168,76,.25);
+      --seal-bg:    linear-gradient(135deg, #c9a84c, #e2c27d);
+      --seal-col:   #0d1b2a;
+      --seal-shd:   rgba(201,168,76,.35);
+      --ctext-h3:   #f0e8d8;
+      --ctext-p:    rgba(255,255,255,.45);
+      --cbtn-bg:    #c9a84c;
+      --cbtn-col:   #0d1b2a;
+      --cbtn-hov:   #e2c27d;
+      --ccard-bdr:  #e4ddd0;
+      --ccard-hov:  #c9a84c;
+      --ccard-shd:  rgba(201,168,76,.1);
+      --cion-bg:    #0d1b2a;
+      --cion-col:   #c9a84c;
+      --cval-col:   #0d1b2a;
+      --mail-bg:    #0d1b2a;
+      --mail-col:   #e2c27d;
+      --mail-hov:   #112240;
+      --addr-bg:    #0d1b2a;
+      --addr-bdr:   rgba(201,168,76,.18);
+      --addr-ic:    #c9a84c;
+      --addr-main:  #f0e8d8;
+      --addr-lm:    rgba(255,255,255,.42);
+      --addr-lm-ic: #c9a84c;
+      --foot-bg:    #0e0e0e;
+      --foot-col:   rgba(255,255,255,.35);
+      --foot-str:   #e2c27d;
+      --img-filter: brightness(.92) contrast(1.04) grayscale(0%);
+    }
+
+    [data-theme="bw"] {
+      --nav-bg:     rgba(0,0,0,.97);
+      --nav-border: rgba(255,255,255,.12);
+      --navy:       #111111;
+      --navy2:      #222222;
+      --accent:     #333333;
+      --accent-lt:  #555555;
+      --accent-dim: rgba(0,0,0,.08);
+      --hero-bg:    #111111;
+      --hero-grad:  linear-gradient(to right, transparent 60%, #111 100%),
+                    linear-gradient(to top, rgba(0,0,0,.55) 0%, transparent 40%);
+      --stamp-bg:   rgba(0,0,0,.82);
+      --stamp-bdr:  rgba(255,255,255,.35);
+      --stamp-col:  #ffffff;
+      --eyebrow:    #aaaaaa;
+      --name-col:   #ffffff;
+      --name-em:    #cccccc;
+      --tag-col:    rgba(255,255,255,.55);
+      --stat-bg:    rgba(255,255,255,.05);
+      --stat-bdr:   rgba(255,255,255,.1);
+      --stat-ic:    #aaaaaa;
+      --stat-lbl:   rgba(255,255,255,.4);
+      --stat-val:   rgba(255,255,255,.9);
+      --stat-hov:   rgba(255,255,255,.07);
+      --btn1-bg:    #ffffff;
+      --btn1-col:   #111111;
+      --btn1-hov:   #e0e0e0;
+      --btn1-shd:   rgba(0,0,0,.2);
+      --btn2-bdr:   rgba(255,255,255,.5);
+      --btn2-col:   #ffffff;
+      --btn2-hov:   rgba(255,255,255,.08);
+      --bg:         #ffffff;
+      --cream:      #f0f0f0;
+      --muted:      #555555;
+      --border:     #cccccc;
+      --card:       #ffffff;
+      --ic-bg:      #111111;
+      --ic-col:     #ffffff;
+      --sec-h2:     #111111;
+      --rule-bg:    #111111;
+      --icard-bdr:  #cccccc;
+      --icard-hov:  #111111;
+      --icard-shd:  rgba(0,0,0,.12);
+      --icard-val:  #111111;
+      --crt-bg:     #111111;
+      --crt-bdr:    rgba(255,255,255,.15);
+      --crt-ic-bg:  rgba(255,255,255,.1);
+      --crt-ic-col: #ffffff;
+      --crt-h3:     #ffffff;
+      --crt-p:      rgba(255,255,255,.45);
+      --cert-bg:    #111111;
+      --cert-bdr:   rgba(255,255,255,.15);
+      --seal-bg:    #ffffff;
+      --seal-col:   #111111;
+      --seal-shd:   rgba(0,0,0,.3);
+      --ctext-h3:   #ffffff;
+      --ctext-p:    rgba(255,255,255,.45);
+      --cbtn-bg:    #ffffff;
+      --cbtn-col:   #111111;
+      --cbtn-hov:   #e0e0e0;
+      --ccard-bdr:  #cccccc;
+      --ccard-hov:  #111111;
+      --ccard-shd:  rgba(0,0,0,.1);
+      --cion-bg:    #111111;
+      --cion-col:   #ffffff;
+      --cval-col:   #111111;
+      --mail-bg:    #111111;
+      --mail-col:   #ffffff;
+      --mail-hov:   #333333;
+      --addr-bg:    #111111;
+      --addr-bdr:   rgba(255,255,255,.15);
+      --addr-ic:    #aaaaaa;
+      --addr-main:  #ffffff;
+      --addr-lm:    rgba(255,255,255,.5);
+      --addr-lm-ic: #aaaaaa;
+      --foot-bg:    #000000;
+      --foot-col:   rgba(255,255,255,.35);
+      --foot-str:   #ffffff;
+      --img-filter: brightness(.88) contrast(1.1) grayscale(100%);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+      transition: background .3s, color .3s;
+    }
+
+    /* ════ NAV ════ */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      background: var(--nav-bg);
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+      height: 62px;
+      border-bottom: 1px solid var(--nav-border);
+      transition: background .3s, border-color .3s;
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .nav-brand .adv-icon {
+      width: 36px; height: 36px;
+      background: #fff;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+      flex-shrink: 0;
+      box-shadow: 0 0 0 1.5px rgba(255,255,255,.2);
+    }
+    .nav-brand .adv-icon img {
+      width: 30px; height: 30px;
+      object-fit: contain;
+      display: block;
+    }
+    .nav-brand span {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--accent-lt);
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: .4px;
+      transition: color .3s;
+    }
+    nav ul { list-style: none; display: flex; gap: 32px; }
+    nav ul a {
+      color: rgba(255,255,255,.65);
+      text-decoration: none;
+      font-size: .8rem;
+      font-weight: 500;
+      letter-spacing: .8px;
+      text-transform: uppercase;
+      transition: color .2s;
+    }
+    nav ul a:hover { color: var(--accent-lt); }
+
+    /* ════ HERO ════ */
+    #hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 62px;
+    }
+    .hero-photo {
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-photo img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      filter: var(--img-filter);
+      transition: filter .4s;
+    }
+    .hero-photo::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: var(--hero-grad);
+      transition: background .3s;
+    }
+    .photo-stamp {
+      position: absolute;
+      bottom: 28px; left: 28px;
+      z-index: 2;
+      display: flex; gap: 8px;
+    }
+    .stamp-pill {
+      background: var(--stamp-bg);
+      border: 1px solid var(--stamp-bdr);
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
+      border-radius: 30px;
+      padding: 5px 14px;
+      font-size: .72rem;
+      font-weight: 600;
+      color: var(--stamp-col);
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      transition: background .3s, color .3s, border-color .3s;
+    }
+
+    .hero-content {
+      background: var(--hero-bg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 52px;
+      position: relative;
+      transition: background .3s;
+    }
+    .hero-content::before {
+      content: '"';
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 14rem;
+      line-height: 1;
+      color: rgba(255,255,255,.04);
+      position: absolute;
+      top: 20px; right: 30px;
+      pointer-events: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    .hero-eyebrow {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 18px;
+    }
+    .hero-eyebrow .line {
+      width: 36px; height: 1.5px;
+      background: var(--eyebrow);
+      transition: background .3s;
+    }
+    .hero-eyebrow span {
+      font-size: .72rem; font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--eyebrow);
+      transition: color .3s;
+    }
+    .hero-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 3.5vw, 3.2rem);
+      font-weight: 700;
+      color: var(--name-col);
+      line-height: 1.15;
+      margin-bottom: 6px;
+      transition: color .3s;
+    }
+    .hero-name em { font-style: italic; color: var(--name-em); transition: color .3s; }
+    .hero-title-tag {
+      font-size: .95rem;
+      color: var(--tag-col);
+      font-weight: 400;
+      margin-bottom: 32px;
+      letter-spacing: .3px;
+      transition: color .3s;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--stat-bg);
+      border-radius: var(--r);
+      overflow: hidden;
+      border: 1px solid var(--stat-bdr);
+      margin-bottom: 36px;
+      transition: background .3s, border-color .3s;
+    }
+    .stat-item {
+      background: rgba(255,255,255,.03);
+      padding: 18px 20px;
+      display: flex; align-items: center; gap: 12px;
+      transition: background .2s;
+    }
+    .stat-item:hover { background: var(--stat-hov); }
+    .stat-item .material-icons { color: var(--stat-ic); font-size: 1.2rem; flex-shrink: 0; transition: color .3s; }
+    .stat-label {
+      font-size: .67rem; text-transform: uppercase;
+      letter-spacing: 1px; color: var(--stat-lbl);
+      margin-bottom: 1px; transition: color .3s;
+    }
+    .stat-val { font-size: .9rem; font-weight: 600; color: var(--stat-val); transition: color .3s; }
+
+    .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--btn1-bg); color: var(--btn1-col);
+      padding: 13px 28px; border-radius: var(--r);
+      font-size: .88rem; font-weight: 700;
+      text-decoration: none; letter-spacing: .3px;
+      transition: background .2s, color .2s, transform .15s, box-shadow .2s;
+    }
+    .btn-primary:hover {
+      background: var(--btn1-hov);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px var(--btn1-shd);
+    }
+    .btn-primary .material-icons { font-size: 17px; }
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 8px;
+      border: 1.5px solid var(--btn2-bdr); color: var(--btn2-col);
+      padding: 12px 26px; border-radius: var(--r);
+      font-size: .88rem; font-weight: 600;
+      text-decoration: none;
+      transition: border-color .2s, background .2s, color .2s;
+    }
+    .btn-ghost:hover { border-color: var(--accent); background: var(--btn2-hov); }
+    .btn-ghost .material-icons { font-size: 17px; }
+
+    /* ════ SECTIONS ════ */
+    .sec { padding: 80px 40px; background: var(--bg); transition: background .3s; }
+    .sec-alt { background: var(--cream); transition: background .3s; }
+    .sec-courts { padding-top: 0; }
+    .container { max-width: 960px; margin: auto; }
+
+    .sec-head { display: flex; align-items: center; gap: 16px; margin-bottom: 10px; }
+    .sec-head .icon-wrap {
+      width: 44px; height: 44px;
+      background: var(--ic-bg);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      transition: background .3s;
+    }
+    .sec-head .icon-wrap .material-icons { color: var(--ic-col); font-size: 1.3rem; transition: color .3s; }
+    .sec-head h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.85rem; font-weight: 700;
+      color: var(--sec-h2); transition: color .3s;
+    }
+    .sec-rule {
+      width: 48px; height: 2px;
+      background: var(--rule-bg);
+      border-radius: 2px;
+      margin-bottom: 36px; margin-left: 60px;
+      transition: background .3s;
+    }
+
+    /* ════ INFO CARDS ════ */
+    .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+    .info-card {
+      background: var(--card);
+      border: 1px solid var(--icard-bdr);
+      border-radius: var(--r);
+      padding: 22px 20px;
+      display: flex; align-items: flex-start; gap: 14px;
+      transition: border-color .2s, box-shadow .2s, transform .2s, background .3s;
+    }
+    .info-card:hover {
+      border-color: var(--icard-hov);
+      box-shadow: 0 8px 28px var(--icard-shd);
+      transform: translateY(-3px);
+    }
+    .info-card .ic {
+      width: 40px; height: 40px;
+      background: var(--ic-bg);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; transition: background .3s;
+    }
+    .info-card .ic .material-icons { color: var(--ic-col); font-size: 1.1rem; transition: color .3s; }
+    .info-card .label {
+      font-size: .65rem; text-transform: uppercase;
+      letter-spacing: 1.2px; color: var(--muted);
+      margin-bottom: 3px;
+    }
+    .info-card .value { font-size: .95rem; font-weight: 600; color: var(--icard-val); transition: color .3s; }
+
+    /* ════ COURTS ════ */
+    .courts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+    .court-card {
+      background: var(--crt-bg);
+      border-radius: var(--r);
+      padding: 26px 24px;
+      display: flex; align-items: center; gap: 16px;
+      border: 1px solid var(--crt-bdr);
+      transition: border-color .2s, transform .2s, background .3s;
+    }
+    .court-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+    .court-card .court-ic {
+      width: 48px; height: 48px;
+      background: var(--crt-ic-bg);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; transition: background .3s;
+    }
+    .court-card .court-ic .material-icons { color: var(--crt-ic-col); font-size: 1.4rem; transition: color .3s; }
+    .court-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem; font-weight: 600;
+      color: var(--crt-h3); line-height: 1.3; transition: color .3s;
+    }
+    .court-card p { font-size: .75rem; color: var(--crt-p); margin-top: 3px; text-transform: uppercase; letter-spacing: .8px; transition: color .3s; }
+
+    /* ════ CERTIFICATE ════ */
+    .cert-panel {
+      background: var(--cert-bg);
+      border-radius: 14px; padding: 36px 40px;
+      display: flex; align-items: center; gap: 28px;
+      border: 1px solid var(--cert-bdr); flex-wrap: wrap;
+      transition: background .3s, border-color .3s;
+    }
+    .cert-seal {
+      width: 72px; height: 72px;
+      background: var(--seal-bg);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 6px 20px var(--seal-shd);
+      transition: background .3s, box-shadow .3s;
+    }
+    .cert-seal .material-icons { color: var(--seal-col); font-size: 2rem; transition: color .3s; }
+    .cert-text { flex: 1; min-width: 180px; }
+    .cert-text h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem; font-weight: 700;
+      color: var(--ctext-h3); margin-bottom: 4px; transition: color .3s;
+    }
+    .cert-text p { font-size: .82rem; color: var(--ctext-p); transition: color .3s; }
+    .btn-cert {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--cbtn-bg); color: var(--cbtn-col);
+      padding: 13px 28px; border-radius: var(--r);
+      font-size: .88rem; font-weight: 700;
+      text-decoration: none; white-space: nowrap;
+      transition: background .2s, color .2s, transform .15s;
+    }
+    .btn-cert:hover { background: var(--cbtn-hov); transform: translateY(-2px); }
+    .btn-cert .material-icons { font-size: 17px; }
+
+    /* ════ CONTACT ════ */
+    .contact-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+    .contact-card {
+      background: var(--card);
+      border: 1px solid var(--ccard-bdr);
+      border-radius: var(--r);
+      padding: 28px 24px;
+      display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px;
+      transition: border-color .2s, box-shadow .2s, background .3s;
+    }
+    .contact-card:hover { border-color: var(--ccard-hov); box-shadow: 0 8px 28px var(--ccard-shd); }
+    .contact-card .c-icon {
+      width: 52px; height: 52px;
+      background: var(--cion-bg);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 10px; transition: background .3s;
+    }
+    .contact-card .c-icon .material-icons { color: var(--cion-col); font-size: 1.4rem; transition: color .3s; }
+    .c-label { font-size: .67rem; text-transform: uppercase; letter-spacing: 1.2px; color: var(--muted); }
+    .c-value { font-size: 1rem; font-weight: 600; color: var(--cval-col); margin-bottom: 16px; word-break: break-all; transition: color .3s; }
+    .btn-call {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: #16a34a; color: #fff;
+      padding: 10px 22px; border-radius: 30px;
+      font-size: .83rem; font-weight: 600;
+      text-decoration: none;
+      transition: background .2s, transform .15s;
+    }
+    .btn-call:hover { background: #15803d; transform: translateY(-1px); }
+    .btn-mail {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: var(--mail-bg); color: var(--mail-col);
+      padding: 10px 22px; border-radius: 30px;
+      font-size: .83rem; font-weight: 600;
+      text-decoration: none;
+      transition: background .2s, color .2s, transform .15s;
+    }
+    .btn-mail:hover { background: var(--mail-hov); transform: translateY(-1px); }
+    .btn-call .material-icons, .btn-mail .material-icons { font-size: 15px; }
+
+    /* ════ MAP ════ */
+    .map-wrap {
+      border-radius: 14px; overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 6px 30px rgba(0,0,0,.1);
+      transition: border-color .3s;
+    }
+    .map-wrap iframe { display: block; width: 100%; height: 420px; border: 0; }
+
+    .address-panel {
+      background: var(--addr-bg);
+      border-radius: var(--r);
+      padding: 22px 26px; margin-top: 18px;
+      display: flex; align-items: flex-start; gap: 14px;
+      border: 1px solid var(--addr-bdr);
+      transition: background .3s, border-color .3s;
+    }
+    .address-panel .material-icons { color: var(--addr-ic); margin-top: 2px; flex-shrink: 0; transition: color .3s; }
+    .addr-main { font-size: .95rem; font-weight: 500; color: var(--addr-main); transition: color .3s; }
+    .addr-lm {
+      font-size: .8rem; color: var(--addr-lm);
+      margin-top: 5px; display: flex; align-items: center;
+      gap: 4px; flex-wrap: wrap; transition: color .3s;
+    }
+    .addr-lm .material-icons { font-size: 13px; color: var(--addr-lm-ic); transition: color .3s; }
+
+    /* ════ FOOTER ════ */
+    footer {
+      background: var(--foot-bg);
+      color: var(--foot-col);
+      text-align: center;
+      padding: 28px 20px 90px; /* extra bottom for toggle */
+      font-size: .78rem;
+      letter-spacing: .3px;
+      transition: background .3s, color .3s;
+    }
+    footer strong { color: var(--foot-str); font-weight: 600; transition: color .3s; }
+    footer .foot-sub { margin-top: 5px; }
+
+    /* ════ THEME TOGGLE ════ */
+    .theme-toggle {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 500;
+      display: flex;
+      align-items: center;
+      background: #111;
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 50px;
+      padding: 5px;
+      gap: 4px;
+      box-shadow: 0 8px 32px rgba(0,0,0,.45);
+    }
+    .theme-toggle button {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 9px 20px;
+      border-radius: 40px;
+      border: none;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-size: .8rem;
+      font-weight: 600;
+      letter-spacing: .4px;
+      transition: background .25s, color .25s, box-shadow .25s;
+      outline: none;
+    }
+    .theme-toggle button .material-icons { font-size: 16px; }
+
+    /* Gold tab */
+    .theme-toggle .t-gold {
+      background: transparent;
+      color: rgba(255,255,255,.45);
+    }
+    .theme-toggle .t-gold.active {
+      background: linear-gradient(135deg, #c9a84c, #e2c27d);
+      color: #111;
+      box-shadow: 0 4px 14px rgba(201,168,76,.4);
+    }
+
+    /* B&W tab */
+    .theme-toggle .t-bw {
+      background: transparent;
+      color: rgba(255,255,255,.45);
+    }
+    .theme-toggle .t-bw.active {
+      background: #ffffff;
+      color: #111;
+      box-shadow: 0 4px 14px rgba(0,0,0,.3);
+    }
+
+    /* ════ RESPONSIVE ════ */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 16px 8px;
+        gap: 6px;
+      }
+      #hero { padding-top: 88px; }
+      .nav-brand span { font-size: .95rem; }
+      nav ul {
+        width: 100%; gap: 0;
+        overflow-x: auto;
+        scrollbar-width: none;
+        justify-content: space-between;
+        padding-bottom: 2px;
+      }
+      nav ul::-webkit-scrollbar { display: none; }
+      nav ul li { flex-shrink: 0; }
+      nav ul a { font-size: .72rem; padding: 4px 10px; display: block; }
+
+      #hero { grid-template-columns: 1fr; min-height: 0; }
+      .hero-photo { height: 92vw; max-height: 440px; min-height: 300px; }
+      .hero-photo img { object-position: center 15%; }
+      .hero-content { padding: 36px 24px 44px; }
+      .hero-content::before { display: none; }
+      .hero-stats { grid-template-columns: 1fr 1fr; }
+      .hero-name { font-size: clamp(1.7rem, 7vw, 2.4rem); }
+
+      .sec { padding: 52px 20px; }
+      .cert-panel { flex-direction: column; text-align: center; }
+      .btn-cert { width: 100%; justify-content: center; }
+      .courts-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 420px) {
+      .hero-stats { grid-template-columns: 1fr 1fr; }
+      .hero-cta { flex-direction: column; }
+      .btn-primary, .btn-ghost { justify-content: center; }
+      .info-grid { grid-template-columns: 1fr; }
+      .contact-row { grid-template-columns: 1fr; }
+      .theme-toggle { width: calc(100% - 32px); justify-content: center; }
+      .theme-toggle button { flex: 1; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <div class="nav-brand">
+    <div class="adv-icon">
+      <img src="Advocate Icon.svg" alt="Advocate Icon" />
+    </div>
+    <span>Adv. Subhadra Gupta</span>
+  </div>
+  <ul>
+    <li><a href="#profile">Profile</a></li>
+    <li><a href="#certificate">Certificate</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#location">Location</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-photo">
+    <img src="Profile Pic.jpeg" alt="Advocate Subhadra Gupta" />
+    <div class="photo-stamp">
+      <span class="stamp-pill">Civil Law</span>
+      <span class="stamp-pill">Notary Public</span>
+    </div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="line"></div>
+      <span>Advocate &amp; Notary</span>
+    </div>
+    <h1 class="hero-name">Advocate<br /><em>Subhadra Gupta</em></h1>
+    <p class="hero-title-tag">Civil Cases Specialist &nbsp;·&nbsp; Kota, Rajasthan</p>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="material-icons">badge</span>
+        <div>
+          <div class="stat-label">Notary Reg. No.</div>
+          <div class="stat-val">25775</div>
+        </div>
+      </div>
+      <div class="stat-item">
+        <span class="material-icons">school</span>
+        <div>
+          <div class="stat-label">Qualification</div>
+          <div class="stat-val">BSc LLB</div>
+        </div>
+      </div>
+      <div class="stat-item">
+        <span class="material-icons">schedule</span>
+        <div>
+          <div class="stat-label">Office Hours</div>
+          <div class="stat-val">11 AM – 6 PM</div>
+        </div>
+      </div>
+      <div class="stat-item">
+        <span class="material-icons">location_city</span>
+        <div>
+          <div class="stat-label">Jurisdiction</div>
+          <div class="stat-val">Kota &amp; Jodhpur</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-cta">
+      <a class="btn-primary" href="tel:+919413941286">
+        <span class="material-icons">call</span> Call Now
+      </a>
+      <a class="btn-ghost" href="#certificate">
+        <span class="material-icons">workspace_premium</span> View Certificate
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROFILE ── -->
+<section class="sec" id="profile">
+  <div class="container">
+    <div class="sec-head">
+      <div class="icon-wrap"><span class="material-icons">person</span></div>
+      <h2>Professional Profile</h2>
+    </div>
+    <div class="sec-rule"></div>
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="ic"><span class="material-icons">balance</span></div>
+        <div><div class="label">Specialisation</div><div class="value">Civil Cases</div></div>
+      </div>
+      <div class="info-card">
+        <div class="ic"><span class="material-icons">badge</span></div>
+        <div><div class="label">Notary Reg. No.</div><div class="value">25775</div></div>
+      </div>
+      <div class="info-card">
+        <div class="ic"><span class="material-icons">school</span></div>
+        <div><div class="label">Education</div><div class="value">BSc LLB</div></div>
+      </div>
+      <div class="info-card">
+        <div class="ic"><span class="material-icons">schedule</span></div>
+        <div><div class="label">Office Hours</div><div class="value">11:00 AM – 6:00 PM</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── COURTS ── -->
+<section class="sec sec-alt sec-courts">
+  <div class="container">
+    <div class="sec-head">
+      <div class="icon-wrap"><span class="material-icons">account_balance</span></div>
+      <h2>Courts of Practice</h2>
+    </div>
+    <div class="sec-rule"></div>
+    <div class="courts-grid">
+      <div class="court-card">
+        <div class="court-ic"><span class="material-icons">gavel</span></div>
+        <div><h3>Kota District Court</h3><p>Rajasthan</p></div>
+      </div>
+      <div class="court-card">
+        <div class="court-ic"><span class="material-icons">account_balance</span></div>
+        <div><h3>Rajasthan High Court</h3><p>Jodhpur Bench</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CERTIFICATE ── -->
+<section class="sec" id="certificate">
+  <div class="container">
+    <div class="sec-head">
+      <div class="icon-wrap"><span class="material-icons">workspace_premium</span></div>
+      <h2>Certificate of Practice</h2>
+    </div>
+    <div class="sec-rule"></div>
+    <div class="cert-panel">
+      <div class="cert-seal"><span class="material-icons">description</span></div>
+      <div class="cert-text">
+        <h3>Official Certificate of Practice</h3>
+        <p>Notary Registration No. 25775 &nbsp;·&nbsp; Bar Council of Rajasthan</p>
+      </div>
+      <a class="btn-cert" href="Certificate of practice.pdf" target="_blank" rel="noopener">
+        <span class="material-icons">open_in_new</span> View PDF
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section class="sec sec-alt" id="contact">
+  <div class="container">
+    <div class="sec-head">
+      <div class="icon-wrap"><span class="material-icons">contact_phone</span></div>
+      <h2>Get In Touch</h2>
+    </div>
+    <div class="sec-rule"></div>
+    <div class="contact-row">
+      <div class="contact-card">
+        <div class="c-icon"><span class="material-icons">phone_in_talk</span></div>
+        <div class="c-label">Mobile</div>
+        <div class="c-value">+91 94139 41286</div>
+        <a class="btn-call" href="tel:+919413941286">
+          <span class="material-icons">call</span> Call Now
+        </a>
+      </div>
+      <div class="contact-card">
+        <div class="c-icon"><span class="material-icons">mail</span></div>
+        <div class="c-label">Email</div>
+        <div class="c-value">subhadragupta9@gmail.com</div>
+        <a class="btn-mail" href="mailto:subhadragupta9@gmail.com">
+          <span class="material-icons">send</span> Send Email
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── LOCATION ── -->
+<section class="sec" id="location">
+  <div class="container">
+    <div class="sec-head">
+      <div class="icon-wrap"><span class="material-icons">location_on</span></div>
+      <h2>Location</h2>
+    </div>
+    <div class="sec-rule"></div>
+    <div class="map-wrap">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3611.2604065845353!2d75.83159447538064!3d25.1606835777345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDA5JzM4LjUiTiA3NcKwNTAnMDMuMCJF!5e0!3m2!1sen!2sin!4v1776591308874!5m2!1sen!2sin"
+        title="Office location of Advocate Subhadra Gupta, Kota, Rajasthan"
+        allowfullscreen="">
+      </iframe>
+    </div>
+    <div class="address-panel">
+      <span class="material-icons">home</span>
+      <div>
+        <div class="addr-main">365, Shastri Nagar, Dadabari, Kota – Rajasthan</div>
+        <div class="addr-lm">
+          <span class="material-icons">near_me</span>
+          Nearby Hotel Mittal Dadabari &nbsp;|&nbsp; In front of Vidhya Mandir Sr. Sec. School
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <p>&copy; 2025 <strong>Advocate Subhadra Gupta</strong>. All rights reserved.</p>
+  <p class="foot-sub">Notary Reg. No. 25775 &nbsp;·&nbsp; Kota, Rajasthan</p>
+</footer>
+
+<!-- ── THEME TOGGLE (hidden – uncomment to re-enable B&W variant) ──
+<div class="theme-toggle" role="group" aria-label="Choose theme">
+  <button type="button" class="t-gold active" id="btn-gold" onclick="setTheme('gold')" aria-pressed="true">
+    <span class="material-icons">auto_awesome</span> Classic Gold
+  </button>
+  <button type="button" class="t-bw" id="btn-bw" onclick="setTheme('bw')" aria-pressed="false">
+    <span class="material-icons">contrast</span> Black &amp; White
+  </button>
+</div>
+
+<script>
+  function setTheme(t) {
+    document.documentElement.setAttribute('data-theme', t);
+    document.getElementById('btn-gold').classList.toggle('active', t === 'gold');
+    document.getElementById('btn-gold').setAttribute('aria-pressed', t === 'gold');
+    document.getElementById('btn-bw').classList.toggle('active', t === 'bw');
+    document.getElementById('btn-bw').setAttribute('aria-pressed', t === 'bw');
+    localStorage.setItem('adv-theme', t);
+  }
+  (function () {
+    var saved = localStorage.getItem('adv-theme');
+    if (saved && saved !== 'gold') setTheme(saved);
+  })();
+</script>
+──>
+
+</body>
+</html>
